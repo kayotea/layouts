@@ -1,0 +1,50 @@
+/* stylesheet for layout.html */
+
+* { box-sizing: border-box; }
+
+#wrapper{
+    width: 90%;
+    margin: 0px auto;
+}
+.row {
+    clear: both;
+}
+/* small sized screens */
+@media only screen and (max-width: 480px){
+    .twelve-s { width: 100%; background-color: aquamarine; }
+    .narrow { display: none; }
+}
+/* medium sized screens */
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+    .two-m { width: 50%; }
+    .three-m { width: 25%; }
+    .four-m { width: 33.333333%; background-color: lightpink; }
+    .five-m { width: 41.666666%; }
+    .seven-m { width: 58.333333%; }
+    .eight-m { width: 66.666666%; }
+    .twelve-m { width: 100%; background-color: lightpink; }
+}
+/* large sized screens */
+@media only screen and (min-width: 1024px){
+    .three-l { width: 25%; background-color: lightgoldenrodyellow; }
+    .four-l { width: 33.333333%; }
+    .eight-l { width: 66.666666%; }
+}
+.col {
+    float: left;
+    padding: 10px 20px; /*gutter*/
+}
+li{
+    background: #D8D8DC;
+    border: 1px solid silver;
+    padding: 5px;
+    display: inline-block;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+#grey{
+    background-color: #D8D8DC;
+    padding: 2px 10px;
+}
